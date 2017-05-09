@@ -1,0 +1,168 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@font-face { font-family: Digory; src: url('/fonts/Digory_Doodles_PS.ttf'); }
+div {
+  // border: 1px solid black;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+#subtitle {
+  padding: 0 0 0 25px;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 70px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+#hi {
+  font-family: "Digory";
+  font-weight: normal;
+  font-size: 25px;
+}
+#subtitle {
+  font-size: 12px
+}
+.navbar-brand {
+  padding: 15px 0;
+}
+.navbar-custom {
+  padding: 15px 0 5px;
+}
+.navbar-default {
+  background-color: transparent;
+  border: 0 !important;
+  transition: all 0.6s ease-out;
+}
+.navbar-right {
+  padding-top: 10px;
+}
+.navbar-default .navbar-nav li a {
+  color: black;
+}
+.navbar-default .navbar-brand {
+  color: black;
+}
+.navbar-default.scrolled {
+  background-color: black;
+  color: white;
+}
+.navbar-default.scrolled a {
+  color: white;
+}
+.navbar-default.scrolled li a{
+  color: white;
+}
+.nav li a {
+  padding: 10px 25px;
+}
+.nav li:hover {
+  border-top: 2px solid yellow;
+}
+.nav li:hover #services {
+  border-top: 2px solid yellow;
+  background-color: #777;
+}
+/* Dropdown menu Navigation Bar */
+ul li ul.dropdown{
+  padding: 0px 8px 0 8px;
+  min-width: 100%; /* Set width of the dropdown */
+  background: white;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+    }
+ul li:hover ul.dropdown{
+  width: 100%;
+  color: white;
+  background-color: #777;
+  display: block; /* Display the dropdown */
+}
+ul li ul.dropdown li{
+  display: block;
+}
+ul.dropdown li a {
+display: block;
+padding: 8px 0;
+color: #333;
+text-decoration: none;
+}
+#mandala {
+text-align: center;
+margin: 0 auto;
+overflow: hidden;
+padding-top: 50px;
+}
+#header-image{
+  margin: 0 auto;
+}
+li.menu-header{
+  border-bottom: 1px solid black;
+}
+
+p {
+  text-align: justify;
+}
+section {
+  padding: 150px 0;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+  }
+}
+#location {
+  background-color: #777;
+}
+/* Custom page footer */
+footer.text-center {
+  padding: 19px;
+  color: white;
+  background-color: black;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 820px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+#map {
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 414px){
+   .navbar-default {
+    background-color: white;
+   }
+   ul li ul.dropdown{
+    position: relative;
+    background-color: white;
+  }
+}

@@ -3,9 +3,8 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @font-face { font-family: Digory; src: url('/fonts/Digory_Doodles_PS.ttf'); }
-div {
-  // border: 1px solid black;
-}
+
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -127,6 +126,32 @@ section {
 margin: 0 auto;
 padding-top: 90px;
 overflow: hidden;
+}
+label {
+  display: block;
+  padding-top: 10px;
+}
+label .label-text {
+  cursor: text;
+  -moz-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  -webkit-transform: translateY(-22px);
+  transform: translateY(-22px);
+  transition: all 0.3s;
+}
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid #777 2px;
+  transition: all .03s;
+}
+label input:focus + .label-text {
+  color: #777;
+  text-transform: uppercase;
+  -moz-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -webkit-transform: translateY(-55px);
+  transform: translateY(-55px);
 }
 #location {
   background-color: #777;

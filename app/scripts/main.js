@@ -1,7 +1,7 @@
 console.log('\'Allo \'Allo!');
 
 $(function(){
-  "use strict";
+  'use strict';
 
 // Change navbar color on scroll
     $(window).scroll(function(){

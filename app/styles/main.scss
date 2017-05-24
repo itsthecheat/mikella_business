@@ -22,9 +22,13 @@ body {
   font-size: 16px;
 }
 #hi {
-  font-family: "Digory";
+  font-family: 'Reenie Beanie';
   font-weight: normal;
-  font-size: 25px;
+  font-size: 55px;
+}
+#hi:hover {
+  color: rgb(224, 186, 53);
+
 }
 #subtitle {
   font-size: 12px
@@ -36,7 +40,7 @@ body {
   padding: 15px 0 5px;
 }
 .navbar-default {
-  background-color: transparent;
+  background-color: rgb(136, 176, 75);
   border: 0 !important;
   transition: all 0.6s ease-out;
 }
@@ -45,49 +49,56 @@ body {
 }
 .navbar-default .navbar-nav li a {
   transition: 0.5s;
-  color: black;
+  color: white;
 }
 .navbar-default .navbar-brand {
-  color: black;
+  color: white;
 }
 .navbar-default.scrolled {
-  background-color: black;
+  background-color: rgb(71, 36, 59);
   color: white;
 }
 .navbar-default.scrolled a {
   color: white;
 }
 .navbar-default.scrolled li a{
-  color: white;
+  color: rgb(136, 176, 75);
 }
 .nav li a {
   padding: 10px 25px;
 }
 .navbar-default .navbar-nav li a:hover {
-  color: #777;
+  color: rgb(125, 32, 39);
+  transition: 0.5s;
+}
+.navbar-default.scrolled .navbar-nav li a:hover {
+  color: rgb(224, 186, 53);
   transition: 0.5s;
 }
 .nav li a:hover {
   text-decoration: overline;
 }
-.nav li:hover #services {
-  background-color: #777;
-}
+// .nav li:hover #services {
+//   background-color: rgb(71, 36, 59);
+// }
 /* Dropdown menu Navigation Bar */
 ul li ul.dropdown{
   padding: 0px 8px 0 8px;
   min-width: 100%; /* Set width of the dropdown */
-  background: white;
+  background-color: rgb(136, 176, 75);
   display: none;
   position: absolute;
   z-index: 999;
   left: 0;
 }
+.navbar-default.scrolled ul li ul.dropdown {
+  background-color: rgb(71, 36, 59);
+}
 ul li:hover ul.dropdown{
   width: 100%;
   color: white;
-  background-color: #777;
   display: block; /* Display the dropdown */
+  transition: all 0.6s ease-out;
 }
 ul li ul.dropdown li{
   display: block;
@@ -108,14 +119,14 @@ padding-top: 50px;
   margin: 0 auto;
 }
 li.menu-header{
-  // border-bottom: 1px solid black;
+  border-bottom: 1px dashed white;
 }
 
 p {
   text-align: justify;
 }
 section {
-  padding: 150px 0;
+  padding: 175px 0;
 }
 @media (max-width: 767px) {
   section {
@@ -127,11 +138,20 @@ margin: 0 auto;
 padding-top: 90px;
 overflow: hidden;
 }
+#art-therapy-picture{
+margin: 0 auto;
+padding-top: 90px;
+overflow: hidden;
+}
+form {
+  font-family: 'PT Sans', sans-serif;
+}
 label {
   display: block;
   padding-top: 10px;
 }
 label .label-text {
+  font-family: 'PT Sans', sans-serif;
   cursor: text;
   -moz-transform: translateY(-22px);
   -ms-transform: translateY(-22px);
@@ -146,21 +166,24 @@ label input {
   transition: all .03s;
 }
 label input:focus + .label-text {
-  color: #777;
+  color: 'black';
   text-transform: uppercase;
   -moz-transform: translateY(-55px);
   -ms-transform: translateY(-55px);
   -webkit-transform: translateY(-55px);
   transform: translateY(-55px);
 }
+input#contact-method {
+  display: none;
+}
 #location {
-  background-color: #777;
+  background-color: rgb(224, 186, 53);
 }
 /* Custom page footer */
 footer.text-center {
   padding: 19px;
   color: white;
-  background-color: black;
+  background-color: rgb(71, 36, 59);
 }
 
 /* Customize container */
@@ -193,7 +216,7 @@ footer.text-center {
 }
 @media screen and (max-width: 414px){
    .navbar-default {
-    background-color: white;
+    padding: 10px;
    }
    ul li ul.dropdown{
     position: relative;

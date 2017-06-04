@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mikella Millen - Art Therapy</title>
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Mukta+Vaani|Open+Sans+Condensed:300|Oswald|PT+Sans|Reenie+Beanie"
+    <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Reenie+Beanie|PT+Sans+Narrow|PT+Sans"
     rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/hover/css/hover.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -37,16 +39,14 @@
 
             <div class="navbar-header page-scroll">
 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-                </button>
+                <span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span><i class="glyphicon glyphicon-menu-hamburger"></i>
+                </span>
 
-                <a class="navbar-brand" href="#page-top"><span class="page-scroll" id="hi">Mikella Millen
+                <a class="navbar-brand" href="#page-top"><span class="page-scroll" id="hi">Mikella Millen <span id="license">LCAT, ATR-BC</span>
             </span>
             <br>
-             <!-- <span id="subtitle" class="page-scroll">
-               Art Psychotherapist and Clinical Supervisor
-             </span> --></a>
+            </a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -67,6 +67,9 @@
                             </li>
                             <li class="page-scroll">
                                 <a href="#psychotherapy">Psychotherapy</a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="#specialization">Specialization</a>
                             </li>
                             <li class="menu-header">
                                 Professionals
@@ -95,11 +98,16 @@
 
     <!-- Header,Image-->
     <header>
-    <section>
+    <section id="page-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" id="mandala">
-                    <img src="images/placeholder.jpg" alt="image" class="img-responsive" id="header-image">
+
+                <h1 id="title">
+                    Art Psychotherapy <br />
+                    and Clinical Supervision
+                </h1>
+                    <img src="images/logo_sm.png" alt="image" class="img-responsive" id="header-image">
                 </div>
             </div>
         </div>
@@ -111,13 +119,13 @@
     <section id="art-therapy">
         <div class="container">
             <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <img src="images/whatis.jpg" alt="Drawing by Mikella Millen" class="img-responsive"
-                id="art-therapy-picture">
-            </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-12">
                     <h2>What is art therapy?</h2>
-                    <br />
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-12">
                     <p>Art Therapy is a unique form of psychotherapy that
                         uses the art process to assist clients in expressing
                         thoughts, feelings, and memories. It can function
@@ -129,6 +137,15 @@
                         process, with thoughts and feelings being expressed
                         directly through the art that is made, and may
                         not be remarked upon verbally at that time.</p>
+                            <img src="images/whatis.jpg" alt="Drawing by Mikella Millen" class="img-responsive"
+                            id="art-therapy-picture">
+                        <p>The creative process uses areas of the brain that are typically associated with sensory memory, experience of emotion and imaginative play, making Art Therapy ideal for some populations that may not be as responsive to verbally oriented therapies such as: children, persons with developmental problems or disabilities, trauma survivors, introverted persons or those who experience high levels of anxiety, traumatic brain injuries, and individuals with substance use problems.</p>
+                    <p>
+                        It is also helpful for families, or individuals who have difficulty accessing unconscious material and wish to develop greater capacity for insight.
+                    </p>
+                    <p>
+                        For more information about art therapy, please visit the <a href="http://arttherapy.org/aata-aboutus.html#whatisarttherapy">American Art Therapy Association website.</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -140,6 +157,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Psychotherapy</h2>
+                </div>
+            </div>
                     <br>
                     <div class="row">
                         <div class="col-lg-12">
@@ -167,103 +186,141 @@
                                 <br> I work with adolescents, emerging adults,
                                 and adults; individuals, couples, and families.
                             </p>
-
                         </div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h3>Areas of specialization</h3>
+                <div class="row">
+                    <div class="col-lg-12 page-scroll" id="icon">
+                        <a href="#specialization">
+                            <span class="hvr-icon-down"></span>
+                        </a>
+                    </div>
+                </div>
+                 </div>
+    </section>
+
+    <!-- Specialization Section -->
+    <section id="specialization">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Areas of specialization</h2>
+                    </div>
+                </div>
+
+              <!-- Nav tabs -->
+        <div class="row">
+            <div class="col-lg-12">
+               <ul class="nav nav-tabs" role="tablist">
+                 <li role="presentation" class="active"><a href="#trauma" aria-controls="trauma" role="tab" data-toggle="tab">Trauma</a></li>
+                 <li role="presentation"><a href="#grief" aria-controls="grief" role="tab" data-toggle="tab">Grief</a></li>
+                 <li role="presentation"><a href="#sexuality" aria-controls="sexuality" role="tab" data-toggle="tab">LGBTQIA and Sexuality</a></li>
+                 <li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab">Relationship Problems</a></li>
+               </ul>
+            </div>
+        </div>
+
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="trauma">
+                    <p>Virtually everyone experiences some sort of
+                        trauma during the lifespan, and humans
+                        are very resilient in the face of stress.
+                        There are also some types of events that
+                        are so threatening, scary, sudden or confusing
+                        that it changes one's perspective on themselves,
+                        others, and the world. This is called "trauma
+                        response" or "post traumatic stress."
+                    </p>
+                    <p>
+                        In trauma-focused therapy, focus is split between decreasing unwanted "symptoms" and developing a cohesive understanding of what happened and how it affected you.  The length and style of treatment depends on the <span id="trauma-modal" data-toggle="modal" data-target=".bs-example-modal-sm">type of trauma</span>.
+                    </p>
+
+                    <!-- Small modal -->
+                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                      <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                          <h3>Acute trauma and PTSD</h3>
+                                <p>
+                                  When something tragic or terrifying occurs, such as being the witness or victim of a crime or having a serious accident, most people experience an increase in stress in the immediate aftermath that gradually decreases over several months, provided that a person has some coping skills to manage feelings.  This is called acute stress, and if treatment is required it is often short term.
+                                  When acute stress persists, it becomes post traumatic stress.
+                                </p>
+                                  <h3>Complex trauma</h3>
+                                <p>
+                                  When trauma is experienced repeatedly over time, or occurs primarily in the attachment between parent and child or through emotional means, it can create persistent challenges with developing and maintaining relationships, and managing feelings that arise in relationships.  This is frequently called complex trauma or relational trauma.  Art therapy is a particularly effective method for working with complex trauma, however I also employ other techniques including cognitive behavioral and dialectical behavioral approaches to develop insight.
+                                  </p>
                         </div>
+                      </div>
                     </div>
 
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h4>Trauma</h4>
-                            <p>Virtually everyone experiences some sort of
-                                trauma during the lifespan, and humans
-                                are very resilient in the face of stress.
-                                There are also some types of events that
-                                are so threatening, scary, sudden or confusing
-                                that it changes one's perspective on themselves,
-                                others, and the world. This is called "trauma
-                                response" or "post traumatic stress."</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <h4>Grief</h4>
-                            <p>
-                                Some theorists have said that grief is the universal trauma; death is a
-                                part of life. Support through the loss
-                                of a significant person is critically important,
-                                especially for children and when coping
-                                with shocking, unexpected, or violent death.
-                                My approach validates grief as an ongoing
-                                process, while emphasizing the importantance
-                                of finding the means to move forward while
-                                still remembering the person.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <!-- In trauma-focused therapy, focus is split between decreasing unwanted "symptoms" and developing a cohesive understanding of what happened and how it affected you.  The length and style of treatment depends on the type of trauma (link). -->
-                    <!-- From "type of trauma" link above-
-            "Acute trauma and PTSD
-            When something tragic or terrifying occurs, such as being the witness or victim of a crime or having a serious accident, most people experience an increase in stress in the immediate aftermath that gradually decreases over several months, provided that a person has some coping skills to manage feelings.  This is called acute stress, and if treatment is required it is often short term.
-            When acute stress persists, it becomes post traumatic stress.
-            Complex trauma
-            When trauma is experienced repeatedly over time, or occurs primarily in the attachment between parent and child or through emotional means, it can create persistent challenges with developing and maintaining relationships, and managing feelings that arise in relationships.  This is frequently called complex trauma or relational trauma.  Art therapy is a particularly effective method for working with complex trauma, however I also employ other techniques including cognitive behavioral and dialectical behavioral approaches to develop insight." -->
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h4>LGBTQIA and sexuality</h4>
-                            <p>
-                                On a personal and professional level I am committed to providing affirming
-                                treatment to the LGBTQIA community, and
-                                maintaining a flexible and respectful approach
-                                to various expressions of sexuality. This
-                                includes but is not limited to binary and
-                                non-binary gender identity and sexual orientation,
-                                coming out, transition, asexuality, polyamory
-                                and/or non-monagamy, power play, and intersections
-                                of sexuality and trauma. I work with both
-                                individuals and couples.
-                            </p>
-                        </div>
-                        <div class="col-lg-6">
-                            <h4>Relationship problems</h4>
-                            <p>
-                                This topic is one of the most common reasons that individuals and couples
-                                seek therapy. Whether you have difficulty
-                                connecting or maintaining connection, struggle
-                                with intimacy, experience relationship
-                                patterns that seem to keep repeating, or
-                                strive for better communication, therapy
-                                can be a great tool to understand and resolve
-                                these challenges.
-                            </p>
-
-                        </div>
-                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="grief">
+                            <p>Some theorists have said that grief is the universal trauma; death is a
+                            part of life. Support through the loss
+                            of a significant person is critically important,
+                            especially for children and when coping
+                            with shocking, unexpected, or violent death.
+                            My approach validates grief as an ongoing
+                            process, while emphasizing the importantance
+                            of finding the means to move forward.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="sexuality">
+                    <p>
+                        On a personal and professional level I am committed to providing affirming
+                        treatment to the LGBTQIA community, and
+                        maintaining a flexible and respectful approach
+                        to various expressions of sexuality. This
+                        includes but is not limited to binary and
+                        non-binary gender identity and sexual orientation,
+                        coming out, transition, asexuality, polyamory
+                        and/or non-monagamy, power play, and intersections
+                        of sexuality and trauma. I work with both
+                        individuals and couples.
+                    </p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="relationships">
+                        <p>
+                            This topic is one of the most common reasons that individuals and couples
+                            seek therapy. Whether you have difficulty
+                            connecting or maintaining connection, struggle
+                            with intimacy, experience relationship
+                            patterns that seem to keep repeating, or
+                            strive for better communication, therapy
+                            can be a great tool to understand and resolve
+                            these challenges.
+                        </p>
+                </div>
+            <div class="row">
+                <div class="col-lg-12">
+                   <img src="images/watercolor.jpeg" alt="watercolor" class="img-responsive"
+                   id="watercolor">
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!-- Supervision Section -->
     <section id="supervision">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-12">
                     <h2>Supervision</h2>
-                    <br>
-                    <p>Mikella is the developer and supervisor of the Art
-                        Therapy Internship Program at Sanctuary for Families,
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Mikella is the developer and supervisor of the <a href="http://www.wfuv.org/content/alternative-treatments-series-art-therapy">Art
+                        Therapy</a>  Internship Program at <a href="http://www.sanctuaryforfamilies.org/index.php?option=com_content&task=view&id=40&Itemid=69">Sanctuary for Families</a> ,
                         and supervises graduate level interns from New
                         York University. She is also a co-supervisor at
                         Camp Good Grief, a therapeutic bereavement camp
-                        organized by East End Hospice. Mikella believes
+                        organized by <a href="http://www.eeh.org/"> East End Hospice.</a>
+                    </p>
+                    <img src="images/beach.jpg" alt="Photo by Mikella Millen" class="img-responsive" id="beach">
+                     <p> Mikella believes
                         that the foundation for excellence in clinical
                         practice begins with effective, skilled, and nurturing
                         supervision. For the beginning professional, supervision
@@ -279,10 +336,7 @@
                         professionals.
                     </p>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <img src="images/catdad.jpg" alt="Drawing by Mikella Millen" class="img-responsive"
-                    id="art-therapy-picture">
-                </div>
+
             </div>
         </div>
     </section>
@@ -301,12 +355,45 @@
                         ethical issues, cultural competency, and follow-up
                         “supervision” meetings to help ensure that education
                         is incorporated into daily practice.
-                        <br>
-                        <br> Mikella has provided professional level trainings
+                    </p>
+                    <p>
+                         Mikella has provided professional level trainings
                         with the Clinic Technical Assistance Center, New
                         York University graduate programs of Art Therapy
                         and Social Work, and individual agencies throughout
                         the New York metro area.
+                    </p>
+                    <p>
+                        Trainings are available in the following areas:
+                        <ul>
+                            <li>
+                                Trauma
+                            </li>
+                            <li>
+                                Grief
+                            </li>
+                            <li>
+                                Working with Young Children (6 and younger)
+                            </li>
+                            <li>
+                                Use of art in counseling and groups
+                            </li>
+                            <li>
+                               Attachment
+                            </li>
+                            <li>
+                               Mindfulness (clinical applications for counselors and therapists)
+                            </li>
+                            <li>
+                                Cultural Competency
+                            </li>
+                        </ul>
+
+                    </p>
+                    <p>
+                        Trainings range from 3 hour introductory workshops to multi-day intensives, incorporating didactic presentations, experientials and role-plays, and group discussion.
+
+                        All components of the training will be customized to meet the specific needs of your agency and staff. Please email for more information.
                     </p>
                 </div>
             </div>
@@ -317,13 +404,16 @@
     <section id="about">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12">
+                    <h2>About</h2>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <img src="images/flowers_vtl.jpg" alt="Mikella" class="img-responsive"
                     id="about-picture">
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <h2>About</h2>
-                    <br>
                     <p>
                         Mikella Millen, MA, ATR-BC, LCAT is a licensed Art Therapist, Clinical
                         Supervisor, and graduate educator in New York City.
@@ -348,13 +438,9 @@
                         professionals doing service work abroad.
                     </p>
                     <p>
-                        Mikella is a graduate level guest lecturer with New York University's Art
-                        Therapy program and Silver School of Social Work,
-                        and consults with several leading agencies in New
-                        York City on providing competent trauma treatment.
-                        She has obtained additional training in Couples
-                        Therapy at the Institute for Contemporary Psychotherapy
-                        and has a private practice in New York City.
+                        Mikella is a graduate level guest lecturer with New York University's Art Therapy program and Silver School of Social Work, and has presented professionally for numerous organizations in New York City including the McSilver Institute for Poverty, Policy & Research, Coalition for Hispanic Family Services, and the NYC Mayor's Office to Combat Domestic Violence. She has obtained additional training in Couples Therapy at the Institute for Contemporary Psychotherapy and Professional Coaching through NYU’s School of Professional Studies.
+
+
                     </p>
                 </div>
             </div>
@@ -404,30 +490,25 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <a href="http://www.lesliebehum.io">designed & built by leslie behum</a>
+        </div>
+    </footer>
+
     <!--Google Map -->
     <section id="location">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12" id="map">
-                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=412%206th%20Ave%20New%20York%2C%20NY%20suite%20513&key=AIzaSyD4YCcAPWD0lh6iG6H1AXvrrBMalB9RS3k"
+                <div class="map-responsive" id="map">
+                    <iframe width="500" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=412%206th%20Ave%20New%20York%2C%20NY%20suite%20513&key=AIzaSyD4YCcAPWD0lh6iG6H1AXvrrBMalB9RS3k"
                     allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Designed by Leslie Behum
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -51,7 +51,7 @@ a #hi:hover {
 #hi a:hover {
   color: rgb(224, 186, 53);
 }
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .services-menu {
     color: white;
 }
 .navbar-custom {
@@ -74,14 +74,14 @@ a #hi:hover {
 .navbar-right {
   padding-top: 10px;
 }
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li a, .services-menu {
   transition: 0.5s;
   color: white;
 }
-.navbar-default .navbar-nav li a:focus {
+.navbar-default .navbar-nav li a:focus, .services-menu:focus {
   color: white;
 }
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .services-menu {
   color: white;
 }
 .navbar-default.scrolled {
@@ -91,26 +91,29 @@ a #hi:hover {
 .navbar-default.scrolled a {
   color: white;
 }
-.navbar-default.scrolled li a{
+.navbar-default.scrolled li a, .navbar-default.scrolled .services-menu{
   color: rgb(136, 176, 75);
 }
 .nav li a {
   padding: 10px 20px;
 }
-.navbar-default .navbar-nav li a:hover {
+.services-menu {
+  padding: 7px 20px;
+  color: white;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav li a:hover, .services-menu:hover{
   color: rgb(125, 32, 39);
   transition: 0.5s;
 }
-.navbar-default.scrolled .navbar-nav li a:hover {
+.navbar-default.scrolled .navbar-nav li a:hover, .navbar-default.scrolled .services-menu:hover  {
   color: rgb(224, 186, 53);
   transition: 0.5s;
 }
-.nav li a:hover {
+.nav li a:hover, .nav .services-menu:hover{
   text-decoration: overline;
 }
-// .nav li:hover #services {
-//   background-color: rgb(71, 36, 59);
-// }
+
 /* Dropdown menu Navigation Bar */
 ul li ul.dropdown{
   padding: 0px 8px 0 8px;
@@ -120,9 +123,6 @@ ul li ul.dropdown{
   position: absolute;
   z-index: 999;
   left: 0;
-}
-#services a:hover{
-  text-decoration: none;
 }
 .navbar-default.scrolled ul li ul.dropdown {
   background-color: rgb(71, 36, 59);
@@ -256,6 +256,9 @@ input#contact-method {
 #location {
   background-color: rgb(224, 186, 53);
 }
+.phone {
+  text-align: center;
+}
 /* Custom page footer */
 footer.text-center {
   padding: 19px;
@@ -380,6 +383,8 @@ footer.text-center {
    }
    ul li ul.dropdown{
     position: relative;
-    background-color: white;
   }
+  .nav li a:hover, .nav .services-menu:hover {
+    text-decoration: none;
+}
 }

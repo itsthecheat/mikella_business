@@ -14,6 +14,14 @@ $(function(){
         }
     });
 
+    window.addEventListener('touchstart', function() {
+      $('.services-menu').on('click', function(e) {
+        defaultPrevented:true;
+        $('.dropdown').slideDown(400).stop();
+      });
+    });
+
+
 // Page Scroll transition effect when clilcking menu item
     $('.page-scroll a').bind('click', function(e) {
       var $element = $(this);
@@ -31,15 +39,16 @@ $(function(){
   var contact = function(){
     $('input:radio[name=contact]').on('click', function(e) {
       var value = $('input:radio[name=contact]:checked').val();
-        if (value === "Phone") {
+        if (value === 'Phone') {
           $('#contact-method').html('<input type="phone" name="phone" /><div id="input-text" class="label-text">Phone</div>').show('600');
-        } else if (value === "Email") {
+        } else if (value === 'Email') {
           $('#contact-method').html('<input type="email" name="email" /><div id="input-text" class="label-text">Email</div>').show('600');
         } else {
           $(this).hide('600')
         }
       });
 }();
+
 
 // var clearField = function(){
 //   $('input').focusout(function(e) {

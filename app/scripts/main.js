@@ -35,47 +35,32 @@ $(function(){
             $('.navbar-toggle:visible').click();
     });
 
+//keep label on top of field when value is entered
+    function clearField() {
+      $('input').on('blur', function(e) {
+      var inputValue = this.value;
+        if (inputValue) {
+          this.classList.add('value-exists');
+        } else {
+          this.classList.remove('value-exists');
+        }
+      });
+    };
+    clearField();
 
-  var contact = function(){
+//change label based on chosen contact method
     $('input:radio[name=contact]').on('click', function(e) {
       var value = $('input:radio[name=contact]:checked').val();
         if (value === 'Phone') {
-          $('#contact-method').html('<input type="phone" name="phone" /><div id="input-text" class="label-text">Phone</div>').show('600');
+          $('#contact-method').html('<input id="contact2" type="phone" name="phone" /><div class="label-text">Phone</div>').show('600');
+
         } else if (value === 'Email') {
-          $('#contact-method').html('<input type="email" name="email" /><div id="input-text" class="label-text">Email</div>').show('600');
-        } else {
-          $(this).hide('600')
+          $('#contact-method').html('<input type="email" name="email" /><div class="label-text">Email</div>').show('600');
         }
+        clearField();
       });
-}();
 
-
-// var clearField = function(){
-//   $('input').focusout(function(e) {
-//     var value = $('input').val();
-//     if (value.length !== 0){
-//       $('.label-text').css({
-//                 'color': 'black',
-//                 'text-transform': 'uppercase',
-//                 '-moz-transform': 'translateY(-55px)',
-//                 '-ms-transform': 'translateY(-55px)',
-//                 '-webkit-transform': 'translateY(-55px)',
-//                 'transform': 'translateY(-55px)'
-//               })
-//     } else if (value.length === 0) {
-//       $('.label-text').css({
-//         '-moz-transform': 'translateY(-22px)',
-//         '-ms-transform': 'translateY(-22px)',
-//         '-webkit-transform': 'translateY(-22px)',
-//         'transform': 'translateY(-22px)',
-//         'transition': 'all 0.3s'
-//       })
-//     }
-//     });
-// }()
-
-
-})
+});
 
 
 

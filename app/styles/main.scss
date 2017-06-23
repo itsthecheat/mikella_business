@@ -220,7 +220,11 @@ float: left;
 .nav-tabs > li.active > a, .nav-tabs {
   color: rgb(136, 176, 75);
 }
+.block{
+  margin: 0 auto;
+}
 form {
+  width: 75%;
   font-family: 'PT Sans', sans-serif;
 }
 label {
@@ -228,7 +232,6 @@ label {
   padding-top: 10px;
 }
 label .label-text {
-  font-family: 'PT Sans', sans-serif;
   cursor: text;
   -moz-transform: translateY(-22px);
   -ms-transform: translateY(-22px);
@@ -242,22 +245,22 @@ label input {
   border-bottom: solid #777 2px;
   transition: all .03s;
 }
-label input:focus + .label-text {
-  color: 'black';
+label input:focus + .label-text{
+  color: rgb(125, 32, 39);
   text-transform: uppercase;
-  -moz-transform: translateY(-55px);
-  -ms-transform: translateY(-55px);
-  -webkit-transform: translateY(-55px);
   transform: translateY(-55px);
 }
-input#contact-method {
-  display: none;
+label input.value-exists + .label-text {
+  color: rgb(125, 32, 39);
+  text-transform: uppercase;
+  transform: translateY(-55px);
 }
+
 #location {
   background-color: rgb(224, 186, 53);
 }
 .phone {
-  text-align: center;
+  font-size: 20px;
 }
 /* Custom page footer */
 footer.text-center {

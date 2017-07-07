@@ -221,7 +221,14 @@ float: left;
   color: rgb(136, 176, 75);
 }
 .block{
-  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+#alert {
+  font-size: 10px;
+}
+.alert.alert-danger{
+  padding: 0;
+
 }
 form {
   width: 75%;
@@ -362,7 +369,10 @@ footer.text-center {
   color: rgb(136, 176, 75);
   transition: 0.5s;
 }
-
+.box {
+  background-color: transparent;
+  border: 1px solid black;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */

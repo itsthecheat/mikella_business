@@ -49,18 +49,27 @@ $(function(){
     clearField();
 
 //change label based on chosen contact method
-    $('input:radio[name=contact]').on('click', function(e) {
-      var value = $('input:radio[name=contact]:checked').val();
+    $('input:radio[name=method]').on('click', function(e) {
+      var value = $('input:radio[name=method]:checked').val();
         if (value === 'Phone') {
-          $('#contact-method').html('<input id="contact2" type="phone" name="phone" /><div class="label-text">Phone</div>').show('600');
+          $('#contact-method').html('<input type="phone" name="contact" /><div class="label-text">Phone</div>').show('600');
 
         } else if (value === 'Email') {
-          $('#contact-method').html('<input type="email" name="email" /><div class="label-text">Email</div>').show('600');
+          $('#contact-method').html('<input type="email" name="contact" /><div class="label-text">Email</div>').show('600');
         }
         clearField();
       });
 
 });
+
+//form validation
+function validate() {
+  if (document.contactMe.name.value === "") {
+      $('#alert').addClass('alert alert-danger').text('Please provide your name');
+    document.contactMe.name.focus() ;
+    return false;
+  }
+}
 
 
 

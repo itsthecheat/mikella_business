@@ -458,21 +458,26 @@
                     <br/>
                     <br/>
                     <div class="row">
-                      <div class="col-lg-4 col-md-4 col-sm-12">
+                      <div class="col-lg-6 col-md-6 col-sm-6">
                         <p class="block">Please feel free to send me a message regarding appointments via the contact
                         form. I can also be reached at <a href="tel:+1-917-756-5540">+1-917-756-5540</a>
                         </p>
+                        <p class="block">I am located at
+                        <b>412 6th Ave #513
+                        NY, NY</b> just off of the West 4th St stop, serviced by the A, B, C, D, E, F and M trains.</p>
                         <br/><br/>
                       </div>
 
         <!-- Begin Contact Form -->
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                        <form class="blah form" method="post" action="contact.php">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <form name="contactMe" class="blah form" method="post" action="contact.php" onsubmit="return(validate());">
                             <label>
+                                <div id="alert"></div>
                                 <input type="text" name="name" />
                                 <div class="label-text">Name</div>
 
                             </label>
+
                             <br />
                             <label>
                                 <input type="text" name="message" />
@@ -482,17 +487,18 @@
                             <br />
                             <p>How would you prefer to be contacted?</p>
                             <label>
-                                <input class="contact" type="radio"  name="contact" value="Email" /> Email
-                                <input class="contact" type="radio" name="contact" value="Phone" /> Phone
+                                <input type="radio"  name="method" value="Email" /> Email
+                                <input type="radio" name="method" value="Phone" /> Phone
                             </label>
 
                             <br />
                 <!-- Contact Method - Hidden until method selected -->
                            <label id="contact-method">
+                              <input name="contact" />
                             </label>
                             <br />
                             <br />
-<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+<input id="submit" name="submit" type="submit" value="Send" class="box">
                         </form>
                     </div>
         <!-- / End Contact Form -->

@@ -1,7 +1,7 @@
 console.log('\'Allo \'Allo!');
 
-$(function(){
-
+(function($){
+"use strict";
 // Change navbar color on scroll
     $(window).scroll(function(){
       var top = $(window).scrollTop();
@@ -14,13 +14,6 @@ $(function(){
         }
     });
 
-    window.addEventListener('touchstart', function() {
-      $('.services-menu').on('click', function(e) {
-        defaultPrevented:true;
-        $('.dropdown').slideDown(400).stop();
-      });
-    });
-
 
 // Page Scroll transition effect when clilcking menu item
     $('.page-scroll a').bind('click', function(e) {
@@ -31,9 +24,9 @@ $(function(){
         e.preventDefault();
     });
 
-    $('.navbar-collapse ul li a').click(function(){
-            $('.navbar-toggle:visible').click();
-    });
+    $(".page-scroll").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
 
 //keep label on top of field when value is entered
     function clearField() {
@@ -60,16 +53,19 @@ $(function(){
         clearField();
       });
 
-});
+})(jQuery);
 
 //form validation
-function validate() {
-  if (document.contactMe.name.value === "") {
-      $('#alert').addClass('alert alert-danger').text('Please provide your name');
-    document.contactMe.name.focus() ;
-    return false;
-  }
-}
+// function validate() {
+//   email = document.contactForm.email;
+//   atSymbol = document.
+//   if (document.contactMe.name.value === "") {
+//       $('#alert').addClass('alert alert-danger').text('Please provide your name');
+//     document.contactMe.name.focus() ;
+//     return false;
+//   }
+//   if ()
+// }
 
 
 

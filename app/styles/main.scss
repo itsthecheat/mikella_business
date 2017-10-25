@@ -11,10 +11,8 @@ $icon-font-path: '../fonts/';
 #subtitle {
   padding: 0 0 0 25px;
 }
-
 /* Space out content a bit */
 body {
-  padding-top: 70px;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 18px;
 }
@@ -28,7 +26,7 @@ p a:hover, a:visited {
 h2 {
   text-align: center;
 }
-#hi {
+#brand {
   font-family: 'Reenie Beanie';
   font-weight: normal;
   font-size: 55px;
@@ -41,47 +39,42 @@ h2 {
   font-family: 'PT Sans Narrow';
   font-size: 15px;
 }
-.navbar-brand {
-  padding: 15px 0;
+.container-fluid {
+  padding: 0;
 }
-a #hi:hover {
-  color: rgb(224, 186, 53);
-  transition: 0.5s;
-}
-#hi a:hover {
-  color: rgb(224, 186, 53);
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .services-menu {
-    color: white;
-}
-.navbar-custom {
-  padding: 15px 0 5px;
+// Navigation Menu Styling
+.nav li a {
+  padding: 10px 20px;
 }
 .navbar-default {
   background-color: rgb(136, 176, 75);
   border: 0 !important;
   transition: all 0.6s ease-out;
 }
-.navbar-toggle {
-  margin-right: 5px;
-  padding: 4px 5px;
-  border: none;
-  color: white;
-}
-.navbar-toggle:hover {
-  color: rgb(71, 36, 59);
+.navbar-custom {
+  padding: 15px 10px 5px 10px;
 }
 .navbar-right {
   padding-top: 10px;
 }
-.navbar-default .navbar-nav li a, .services-menu {
+.navbar-brand {
+  padding: 15px 0;
+}
+a #brand:hover {
+  color: rgb(224, 186, 53);
+  transition: 0.5s;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: white;
+}
+.navbar-default .navbar-nav li a {
   transition: 0.5s;
   color: white;
 }
-.navbar-default .navbar-nav li a:focus, .services-menu:focus {
+.navbar-default .navbar-nav li a:focus {
   color: white;
 }
-.navbar-default .navbar-brand, .services-menu {
+.navbar-default .navbar-brand {
   color: white;
 }
 .navbar-default.scrolled {
@@ -91,55 +84,64 @@ a #hi:hover {
 .navbar-default.scrolled a {
   color: white;
 }
-.navbar-default.scrolled li a, .navbar-default.scrolled .services-menu{
+.navbar-default.scrolled li a, .navbar-default.scrolled {
   color: rgb(136, 176, 75);
 }
-.nav li a {
-  padding: 10px 20px;
-}
-.services-menu {
-  padding: 7px 20px;
-  color: white;
-  text-decoration: none;
-}
-.navbar-default .navbar-nav li a:hover, .services-menu:hover{
+.navbar-default .navbar-nav li a:hover {
   color: rgb(125, 32, 39);
   transition: 0.5s;
 }
-.navbar-default.scrolled .navbar-nav li a:hover, .navbar-default.scrolled .services-menu:hover  {
+.navbar-default.scrolled .navbar-nav li a:hover, .navbar-default.scrolled {
+  color: rgb(224, 186, 53);
+  background-color: none;
+  transition: 0.5s;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  font-size: 18px;
+  color: white;
+  background: rgb(136, 176, 75);
+  border: none;
+}
+.navbar-default.scrolled .dropdown-menu {
+  background: rgb(71, 36, 59);
+}
+.sub-heading {
+  padding-left: 5px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a
+ {
+  color: white;
+}
+.navbar-default.scrolled .navbar-nav .open .dropdown-menu > li > a
+ {
+  color: rgb(136, 176, 75);
+}
+.navbar-default.scrolled .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: rgb(224, 186, 53);
   transition: 0.5s;
 }
-.nav li a:hover, .nav .services-menu:hover{
-  text-decoration: overline;
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: rgb(125, 32, 39);
+  transition: 0.5s;
+}
+.dropdown-menu > li > a:hover {
+  background: none;
+}
+li > .dropdown > a > .dropdown-toggle {
+  background: none;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background: none;
+  color: rgb(224, 186, 53);
 }
 
-/* Dropdown menu Navigation Bar */
-ul li ul.dropdown{
-  padding: 0px 8px 0 8px;
-  min-width: 100%; /* Set width of the dropdown */
-  background-color: rgb(136, 176, 75);
-  display: none;
-  position: absolute;
-  z-index: 999;
-  left: 0;
-}
-.navbar-default.scrolled ul li ul.dropdown {
-  background-color: rgb(71, 36, 59);
-}
-ul li:hover ul.dropdown{
-  min-width: 100%;
-  color: white;
-  display: block; /* Display the dropdown */
-  transition: all 0.6s ease-out;
-}
-ul li ul.dropdown li{
-  display: block;
-}
-ul.dropdown li a {
-display: block;
-padding: 8px 0;
-text-decoration: none;
+// mobile menu icon appearance
+.navbar-toggle {
+  margin-right: 5px;
+  padding: 4px 5px;
+  border: none;
 }
 #mandala {
 text-align: center;
@@ -149,10 +151,6 @@ overflow: hidden;
 #header-image{
   margin: 0 auto;
 }
-li.menu-header{
-  border-bottom: 1px dashed white;
-}
-
 p {
   text-align: justify;
 }
@@ -262,7 +260,6 @@ label input.value-exists + .label-text {
   text-transform: uppercase;
   transform: translateY(-55px);
 }
-
 #location {
   background-color: rgb(224, 186, 53);
 }
@@ -387,17 +384,20 @@ footer.text-center {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 414px){
+@media screen and (max-width: 768px){
+  #title {
+    font-size: 30px;
+  }
+  #brand {
+    font-size: 45px;
+  }
    .navbar-default {
     padding: 10px;
    }
    section {
     padding: 75px 0;
    }
-   ul li ul.dropdown{
-    position: relative;
-  }
-  .nav li a:hover, .nav .services-menu:hover {
+  .nav li a:hover, .nav :hover {
     text-decoration: none;
 }
 }

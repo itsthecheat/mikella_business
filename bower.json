@@ -4,7 +4,10 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "hover": "^2.1.1"
+    "hover": "^2.1.1",
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
+    "bootstrap": "^4.0.0"
   },
   "overrides": {
     "bootstrap-sass": {

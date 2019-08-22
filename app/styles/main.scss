@@ -17,11 +17,11 @@ body {
   font-size: 18px;
 }
 p a {
-  color: rgb(136, 176, 75);
+  color: rgb(166, 122, 96);
 }
 p a:hover, a:visited {
   text-decoration: none;
-  color: rgb(136, 176, 75);
+  color: rgb(166, 122, 96);
 }
 h2 {
   text-align: center;
@@ -34,6 +34,10 @@ h2 {
 #title {
   font-family: 'PT Sans';
   font-size: 50px;
+  text-align: center;
+  color: rgb(41, 101, 115);
+  padding: 50px 0 25px 0;
+
 }
 #license {
   font-family: 'PT Sans Narrow';
@@ -42,12 +46,17 @@ h2 {
 .container-fluid {
   padding: 0;
 }
+#ocean {
+  max-height: 350px;
+  overflow: hidden;
+}
+
 // Navigation Menu Styling
 .nav li a {
   padding: 10px 20px;
 }
 .navbar-default {
-  background-color: rgb(136, 176, 75);
+  background-color: rgb(210, 215, 217);
   border: 0 !important;
   transition: all 0.6s ease-out;
 }
@@ -61,39 +70,39 @@ h2 {
   padding: 15px 0;
 }
 a #brand:hover {
-  color: rgb(224, 186, 53);
+  color: white;
   transition: 0.5s;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: white;
+    color: rgb(41, 101, 115);
 }
 .navbar-default .navbar-nav li a {
   transition: 0.5s;
-  color: white;
+  color: rgb(41, 101, 115);
 }
 .navbar-default .navbar-nav li a:focus {
   color: white;
 }
 .navbar-default .navbar-brand {
-  color: white;
+  color: rgb(41, 101, 115);
 }
 .navbar-default.scrolled {
-  background-color: rgb(71, 36, 59);
+  background-color: rgb(41, 101, 115);
   color: white;
 }
 .navbar-default.scrolled a {
   color: white;
 }
 .navbar-default.scrolled li a, .navbar-default.scrolled {
-  color: rgb(136, 176, 75);
+  color: rgb(210, 215, 217);
 }
 .navbar-default .navbar-nav li a:hover {
-  color: rgb(125, 32, 39);
+  color: white;
   transition: 0.5s;
   text-decoration: none;
 }
 .navbar-default.scrolled .navbar-nav li a:hover, .navbar-default.scrolled {
-  color: rgb(224, 186, 53);
+  color: white;
   background-color: none;
   transition: 0.5s;
 }
@@ -104,30 +113,29 @@ a #brand:hover {
 /* Dropdown Styling */
 .dropdown-menu {
   font-size: 18px;
-  color: white;
-  background: rgb(136, 176, 75);
+  background: rgb(210, 215, 217);
   border: none;
 }
 .navbar-default.scrolled .dropdown-menu {
-  background: rgb(71, 36, 59);
+  background: rgb(41, 101, 115);
 }
 .sub-heading {
   padding-left: 5px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a
  {
-  color: white;
+  color: rgb(41, 101, 115);
 }
 .navbar-default.scrolled .navbar-nav .open .dropdown-menu > li > a
  {
-  color: rgb(136, 176, 75);
+  color: rgb(210, 215, 217);
 }
 .navbar-default.scrolled .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-  color: rgb(224, 186, 53);
+  color: rgb(41, 101, 115);
   transition: 0.5s;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-  color: rgb(125, 32, 39);
+  color: white;
   transition: 0.5s;
 }
 .dropdown-menu > li > a:hover {
@@ -138,7 +146,7 @@ li > .dropdown > a > .dropdown-toggle {
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background: none;
-  color: rgb(224, 186, 53);
+  color: white;
 }
 
 // mobile menu icon appearance
@@ -151,17 +159,12 @@ li > .dropdown > a > .dropdown-toggle {
 
   background-color: white;
 }
-#mandala {
-text-align: center;
-margin: 0 auto;
-overflow: hidden;
-}
 #header-image{
   margin: 0 auto;
   overflow: hidden;
-  max-width: 50%;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  // max-width: 50%;
+  // padding-top: 25px;
+  // padding-bottom: 50px;
 }
 p {
   text-align: justify;
@@ -188,7 +191,7 @@ section {
 }
 #trauma-modal {
   cursor: pointer;
-  color: rgb(136, 176, 75);
+  color: rgb(166, 122, 96);
 }
 #contact {
   padding: 60px 0 250px 0;
@@ -196,9 +199,9 @@ section {
 #location {
   padding: 150px 0;
 }
-#page-top {
-  padding-top: 65px;
-}
+// #page-top {
+//   padding-top: 65px;
+// }
 #art-therapy-picture, #beach, #about-picture, #watercolor{
 margin: 0 auto;
 overflow: hidden;
@@ -218,21 +221,21 @@ float: left;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   border: 0;
-  color: rgb(136, 176, 75);
+  color: rgb(166, 122, 96);
 }
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
   border: 0;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
-  color: rgb(136, 176, 75);
+  color: rgb(166, 122, 96);
 }
 .nav-tabs > li > a {
   border: 0;
   color: rgb(71, 36, 59);
 }
 .nav-tabs > li.active > a, .nav-tabs {
-  color: rgb(136, 176, 75);
+  color: rgb(166, 122, 96);
 }
 .block{
   padding: 0 20px 0 20px;
@@ -278,7 +281,7 @@ label input.value-exists + .label-text {
   transform: translateY(-55px);
 }
 #location {
-  background-color: rgb(224, 186, 53);
+  background-color: rgb(191, 155, 122);
 }
 .phone {
   font-size: 20px;
@@ -286,17 +289,17 @@ label input.value-exists + .label-text {
 /* Custom page footer */
 footer.text-center {
   padding: 19px;
-  color: rgb(136, 176, 75);
-  background-color: rgb(71, 36, 59);
+  color: rgb(166, 122, 96);
+  background-color: rgb(41, 101, 115);
   text-align: right;
   font-size: 15px;
 }
 .footer-below a{
-  color: rgb(136, 176, 75);
+  color: white;
   text-decoration: none;
 }
 .footer-below a:hover {
-  color: rgb(224, 186, 53);
+  color: rgb(166, 122, 96);
   transition: 0.5s;
 }
 .map-responsive{
@@ -413,6 +416,9 @@ footer.text-center {
   }
   #brand {
     font-size: 45px;
+  }
+  #ocean {
+    max-height: 175px;
   }
    .navbar-default {
     padding: 10px;

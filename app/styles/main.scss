@@ -158,9 +158,16 @@ overflow: hidden;
 }
 #header-image{
   margin: 0 auto;
+  overflow: hidden;
+  max-width: 50%;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 p {
   text-align: justify;
+}
+#retreat {
+  padding: 0px;
 }
 h2 {
   padding: 10px;

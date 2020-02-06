@@ -70,7 +70,7 @@ h2 {
   padding: 15px 0;
 }
 a #brand:hover {
-  color: white;
+  color: rgb(41, 101, 115);
   transition: 0.5s;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -81,7 +81,7 @@ a #brand:hover {
   color: rgb(41, 101, 115);
 }
 .navbar-default .navbar-nav li a:focus {
-  color: white;
+  color: rgb(41, 101, 115);
 }
 .navbar-default .navbar-brand {
   color: rgb(41, 101, 115);
@@ -170,7 +170,7 @@ p {
   text-align: justify;
 }
 #retreat {
-  padding: 0px;
+  padding-right: 10px;
 }
 h2 {
   padding: 10px;

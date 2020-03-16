@@ -50,7 +50,72 @@ h2 {
   max-height: 350px;
   overflow: hidden;
 }
+#splash {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/images/ocean.jpg");
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.splash-overlay {
+  background-color: rgba(0, 0, 0, .4);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  height: 100vh;
 
+}
+.btn-custom {
+  // font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, .4);
+  }
+  button, #button-border {
+    border-radius: 0;
+  }
+.header-splash {
+  letter-spacing: 8px;
+}
+.content {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding-top: 50px;
+  }
+.line-1 {
+  padding-left: 200px;
+}
+.line-2 {
+  padding-left: 250px;
+}
+.line-3 {
+  padding-right: 150px;
+}
+.line-4 {
+  padding-left: 300px;
+}
+.line-5 {
+  padding-right: 265px;
+}
+.line-6 {
+  padding-left: 100px;
+}
+.line-7 {
+  padding-left: 100px;
+}
 // Navigation Menu Styling
 .nav li a {
   padding: 10px 20px;
@@ -392,6 +457,8 @@ footer.text-center {
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+
+
   /* Remove the padding we set earlier */
   .header,
   .footer {
@@ -405,8 +472,32 @@ footer.text-center {
   }
 }
 @media screen and (max-width: 768px){
+  .content {
+    font-size: 2.75rem;
+  }
+  .line-1 {
+    padding-left: 50px;
+  }
+  .line-2 {
+    padding-left: 100px;
+  }
+  .line-3 {
+    padding-right: 0px;
+  }
+  .line-4 {
+    padding-left: 0px;
+  }
+  .line-5 {
+    padding-right: 50px;
+  }
+  .line-6 {
+    padding-left: 50px;
+  }
+  .line-7 {
+    padding-left: 100px;
+  }
   .navbar-brand {
-    padding-left: 25px;
+
   }
   .navbar-toggle {
     padding-right: 25px;

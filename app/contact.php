@@ -1,4 +1,4 @@
-<?php header('refresh: 4; url=index.html'); ?>
+<?php header('refresh: 4; url=therapy.html'); ?>
 <!DOCTYPE html>
 <html>
 
@@ -61,4 +61,3 @@
   </div>
 </body>
 </html>
-

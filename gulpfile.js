@@ -4,6 +4,7 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
+const runSequence = require('gulp4-run-sequence');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -15,7 +16,7 @@ var dev = true;
 gulp.task('default', () => {
   return new Promise(resolve => {
     dev = false;
-    runSequence(['clean', 'wiredep'], 'build', resolve);
+    runSequence(['clean', 'wiredep', 'styles', 'scripts', 'images', 'html', 'fonts', 'extras', 'watch'], 'build', resolve);
   });
 });
 
@@ -99,10 +100,11 @@ gulp.task('html', gulp.parallel('styles', 'scripts'), () => {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('images', () => {
+gulp.task('images', done => {
   return gulp.src('app/images/**/*')
     .pipe($.cache($.imagemin()))
     .pipe(gulp.dest('dist/images'));
+    done();
 });
 
 gulp.task('fonts', done => {
@@ -112,40 +114,21 @@ gulp.task('fonts', done => {
     done();
 });
 
-gulp.task('extras', () => {
+gulp.task('extras', done => {
   return gulp.src([
     'app/*',
     '!app/*.html'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
+  done();
 });
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-// gulp.task('serve', gulp.series('clean', 'wiredep', gulp.parallel('styles', 'scripts', 'fonts')), done => {
-//     browserSync.init({
-//       notify: false,
-//       port,
-//       server: {
-//         baseDir: ['.tmp', 'app'],
-//         routes: {
-//           '/bower_components': 'bower_components'
-//         }
-//       }
-//     });
-//     gulp.watch([
-//       'app/*.html',
-//       'app/images/**/*',
-//       '.tmp/fonts/**/*'
-//     ]).on('change', reload);
-//
-//     gulp.watch('app/styles/**/*.scss', gulp.series('styles'));
-//     gulp.watch('app/scripts/**/*.js', gulp.series('scripts'));
-//     gulp.watch('app/fonts/**/*', gulp.series('fonts'));
-//     gulp.watch('bower.json', gulp.series('wiredep', 'fonts'));
-// done();
-// });
+gulp.task('serve', gulp.series('clean', 'wiredep', 'fonts', 'images', 'extras', 'html', gulp.parallel(watch)), done => {
+done();
+});
 
 function watch() {
   browserSync.init({
@@ -170,7 +153,7 @@ function watch() {
 }
 
 
-gulp.task('serve:dist', gulp.series('default'), () => {
+gulp.task('serve:dist', gulp.parallel('default'), () => {
   browserSync.init({
     notify: false,
     port: 9000,
@@ -199,8 +182,9 @@ gulp.task('serve:test', gulp.series('scripts'), () => {
   gulp.watch('test/spec/**/*.js', gulp.series('lint:test'));
 });
 
-gulp.task('build', gulp.parallel('lint', 'html', 'images', 'fonts', 'extras'), () => {
+gulp.task('build', gulp.parallel('lint', 'html', 'images', 'fonts', 'extras'), done => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+  done();
 });
 
 exports.watch = watch;
